@@ -1,0 +1,3 @@
+# Control de divisas — prototipo
+
+Web app estática HTML/CSS/JavaScript/Tailwind CDN. Abrir index.html o publicar la carpeta en Netlify. Registra compras/ventas de múltiples monedas, agrupa operaciones por par, calcula precios promedio ponderados, posición neta y flujo en moneda cotizada, y exporta CSV compatible con Excel. Los datos se guardan **solo en localStorage del navegador**, sin sincronización, usuario ni respaldo automático. **No apto para producción ni operaciones reales**. Para producción: base de datos, autenticación, auditoría, respaldos, precisión decimal para importes, saldos iniciales, validación servidor y reglas de cotización/posición.

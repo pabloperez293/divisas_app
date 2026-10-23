@@ -1,0 +1,102 @@
+/* Mobile-first: nunca imponer anchos fijos en formularios. */
+* {
+  box-sizing: border-box;
+}
+body {
+  min-width: 280px;
+  font-family:
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    sans-serif;
+}
+.card {
+  background: #122435;
+  border: 1px solid #314658;
+  border-radius: 18px;
+  padding: 16px;
+  min-width: 0;
+}
+label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #d7e1eb;
+  min-width: 0;
+}
+label input:not([type="checkbox"]),
+label select {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+  border: 1px solid #506475;
+  background: #091827;
+  color: #fff;
+  border-radius: 10px;
+  padding: 11px;
+  min-width: 0;
+  outline-offset: 2px;
+}
+button {
+  cursor: pointer;
+  min-height: 43px;
+}
+button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+.btn {
+  border-radius: 11px;
+  padding: 11px 16px;
+  background: #38bfa0;
+  color: #05241f;
+  font-weight: 800;
+}
+.btn-secondary {
+  border: 1px solid #657789;
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: #233b4e;
+  color: white;
+  font-size: 13px;
+  white-space: nowrap;
+}
+.metric {
+  padding: 12px;
+  border: 1px solid #34495b;
+  border-radius: 12px;
+  background: #0a1c2b;
+  overflow-wrap: anywhere;
+}
+.metric small {
+  color: #9fb0c0;
+  display: block;
+  margin-bottom: 5px;
+}
+.metric strong {
+  font-size: 20px;
+}
+.movement {
+  padding: 12px;
+  border: 1px solid #34495b;
+  border-radius: 12px;
+  background: #0a1c2b;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+}
+.hidden {
+  display: none !important;
+}
+@media (min-width: 640px) {
+  .card {
+    padding: 22px;
+  }
+}
+@media (max-width: 359px) {
+  .btn-secondary {
+    white-space: normal;
+    padding: 9px;
+  }
+}
